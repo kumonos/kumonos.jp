@@ -1,0 +1,3 @@
+[submodule "facebook_search"]
+	path = facebook_search
+	url = git@bitbucket.org:muratayusuke/facebook_search.git
