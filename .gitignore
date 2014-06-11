@@ -1,5 +1,8 @@
+# build dir
+/assets/
+
 # Node
-/node_modules
+/node_modules/
 
 # OS X
 .DS_Store
