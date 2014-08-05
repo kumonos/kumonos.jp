@@ -1,0 +1,65 @@
+// -------------------------------------------------------------------
+// Variables
+// -------------------------------------------------------------------
+$brand-primary: #3680cc;
+
+$font-family-sans-serif: 'Lucida Grande', Verdana, 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+$font-family-serif: Georgia, 'Hiragino Mincho ProN', serif;
+$font-family-monospace: Menlo, 'Courier New', 'Hiragino Kaku Gothic ProN', monospace;
+
+// -------------------------------------------------------------------
+// Import Frameworks
+// -------------------------------------------------------------------
+@import 'bootstrap-custom';
+@import 'font-awesome';
+
+// -------------------------------------------------------------------
+// Core Styles
+// -------------------------------------------------------------------
+body {
+  > header, > footer {
+    background: $brand-primary;
+    color: #ffffff;
+  }
+  header {
+    h1 {
+      margin: 0;
+      padding: $line-height-computed 0;
+    }
+    p {
+
+    }
+  }
+  footer {
+    padding: $line-height-computed;
+    text-align: center;
+  }
+}
+#services {
+  .service {
+    border: 1px solid #999999;
+    border-radius: 8px;
+    height: 150px;
+    margin: -1px 0 0 -1px;
+    overflow: hidden;
+  }
+}
+#members {
+  .member {
+    .image {
+      float: left;
+    }
+    .intro {
+      margin: 0 0 2px 75+$line-height-computed;
+    }
+    ul.icons {
+      list-style: none;
+      margin-left: 75+$line-height-computed;
+      padding: 0;
+
+      li {
+        display: inline;
+      }
+    }
+  }
+}
