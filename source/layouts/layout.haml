@@ -1,0 +1,39 @@
+!!! 5
+%html
+  %head
+    %meta{charset: 'utf-8'}
+    %meta{name: 'viewport', content: 'initial-scale=1,user-scalable=no'}
+    %meta{property: 'og:title', content: 'Kumonos'}
+    %meta{property: 'og:type', content: 'website'}
+    %meta{property: 'og:url', content: 'http://kumonos.jp/'}
+    %meta{property: 'og:locale', content: 'ja_JP'}
+    %meta{property: 'og:image', content: image_url('icon.png')}
+    %meta{property: 'og:site_name', content: 'Kumonos'}
+    %meta{property: 'og:description', content: '我々は、「雲」のように自由自在にその形を変え、風と共に颯爽と舞い、稲妻のようなヒラメキを起こし、感動の雨を降らせる、『RockでCoolでSexyな先鋭クリエイティブ集団』です。'}
+    %meta{name: 'description', content: '我々は、「雲」のように自由自在にその形を変え、風と共に颯爽と舞い、稲妻のようなヒラメキを起こし、感動の雨を降らせる、『RockでCoolでSexyな先鋭クリエイティブ集団』です。'}
+    %link{rel: 'icon', type: 'image/png', href: image_path('icon.png')}
+    %link{rel: 'apple-touch-icon', type: 'image/png', href: image_path('icon.jpg')}
+    %title Kumonos
+    = stylesheet_link_tag 'application'
+  %body
+    %header
+      .container
+        %h1= image_tag 'kumonos.png', width: 214, height: 68
+        %p.clearfix 我々は、「雲」のように自由自在にその形を変え、風と共に颯爽と舞い、稲妻のようなヒラメキを起こし、感動の雨を降らせる、『RockでCoolでSexyな先鋭クリエイティブ集団』です。
+    %section
+      .container
+        = yield
+    %footer
+      .container
+        .ninja_onebutton
+          :javascript
+            (function(d){
+            if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_97f1576f6622a2fba8c4df953f01d26a)=='undefined'){
+                document.write("<sc"+"ript type='text\/javascript' src='http:\/\/omt.shinobi.jp\/b\/97f1576f6622a2fba8c4df953f01d26a'><\/sc"+"ript>");
+            }else{
+                window.NINJA_CO_JP_ONETAG_BUTTON_97f1576f6622a2fba8c4df953f01d26a.ONETAGButton_Load();}
+            })(document);
+          %span.ninja_onebutton_hidden{style: 'display:none;'}
+          %span.ninja_onebutton_hidden{style: 'display:none;'}
+        %div &copy; 2014 kumonos All Rights Reserved.
+        %div= icon('envelope-o', link_to('info@kumonos.jp', 'mailto:info@kumonos.jp'))
