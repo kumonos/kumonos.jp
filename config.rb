@@ -41,11 +41,21 @@
 # end
 
 # Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def icon(icon, text="", html_options={})
+    content_class = "fa fa-#{icon}"
+    content_class << " #{html_options[:class]}" if html_options.key?(:class)
+    html_options[:class] = content_class
+
+    html = content_tag(:i, nil, html_options)
+    html << " #{text}".html_safe unless text.blank?
+    html.html_safe
+  end
+
+  def image_url(source)
+    "http://kumonos.jp#{image_path(source)}"
+  end
+end
 
 set :css_dir, 'stylesheets'
 

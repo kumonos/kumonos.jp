@@ -20,6 +20,14 @@ body {
   > header, > footer {
     background: $brand-primary;
     color: #ffffff;
+    a {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+    a:hover, a:active {
+      color: #eeeeee;
+      text-decoration: underline;
+    }
   }
   header {
     h1 {
@@ -32,7 +40,6 @@ body {
   }
   footer {
     padding: $line-height-computed;
-    text-align: center;
   }
 }
 #services {

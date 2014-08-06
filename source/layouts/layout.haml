@@ -25,4 +25,15 @@
         = yield
     %footer
       .container
-        &copy; 2014 kumonos all rights reserved
+        .ninja_onebutton
+          :javascript
+            (function(d){
+            if(typeof(window.NINJA_CO_JP_ONETAG_BUTTON_97f1576f6622a2fba8c4df953f01d26a)=='undefined'){
+                document.write("<sc"+"ript type='text\/javascript' src='http:\/\/omt.shinobi.jp\/b\/97f1576f6622a2fba8c4df953f01d26a'><\/sc"+"ript>");
+            }else{
+                window.NINJA_CO_JP_ONETAG_BUTTON_97f1576f6622a2fba8c4df953f01d26a.ONETAGButton_Load();}
+            })(document);
+          %span.ninja_onebutton_hidden{style: 'display:none;'}
+          %span.ninja_onebutton_hidden{style: 'display:none;'}
+        %div &copy; 2014 kumonos All Rights Reserved.
+        %div= icon('envelope-o', link_to('info@kumonos.jp', 'mailto:info@kumonos.jp'))
