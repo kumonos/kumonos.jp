@@ -5,26 +5,37 @@ title: Kumonos
 .col-xs-12
   %h2= icon('star', 'Services')
   #services.row
-    .service.col-xs-12.col-sm-6
+    .service.col-xs-12.clearfix
+      %p.image= image_tag 'service/pocketporter.png', width: 200, height: 150
+      %h3= link_to('Pocket Porter', 'http://pocketporter.kumonos.jp')
+      %p どんどん溜まっていく「あとで読む」サービスPocketの未読記事を、毎日メールでお届けします
+    .service.col-xs-12.clearfix
+      %p.image= image_tag 'service/whoswho.png', width: 200, height: 150
       %h3= link_to('Who\'s who', 'http://kumonos.jp/facebook_search/')
       %p Facebookを使っていて、「会社名思い出せるけど、名前が出てこない」そんなあなたのためのFacebook友達検索アプリです
-    .service.col-xs-12.col-sm-6
+    .service.col-xs-12.clearfix
+      %p.image= image_tag 'service/mote.png', width: 200, height: 150
       %h3= link_to('モテ筋力メーター', 'https://play.google.com/store/apps/details?id=com.tomo.drawgraph&hl=ja')
       %p あなたの筋肉の強さ、瞬発力からモテ筋力を計測するアプリです
-    .service.col-xs-12.col-sm-6
+    .service.col-xs-12.clearfix
+      %p.image= image_tag 'service/footsal.png', width: 200, height: 150
       %h3= link_to('フットサル運動ノート', 'http://futsal.undonote.com/')
       %p フットサルをより楽しむためのフットサル情報サイトです
-    .service.col-xs-12.col-sm-6
+    .service.col-xs-12.clearfix
+      %p.image= image_tag 'service/friendspop.png', width: 200, height: 150
       %h3= link_to('Friends Pop', 'http://friends-pop.kumonos.jp/?utm_source=kumonos&utm_medium=kumonos&utm_content=services')
       %p あなたの周りの「カワイイ女子」「イケメン男子」が見つかるWebサービスです
-    .service.col-xs-12.col-sm-6
+    .service.col-xs-12.clearfix
+      %p.image= image_tag 'service/bus.png', width: 200, height: 150
       %h3= link_to('都バス時刻表アプリ', 'https://itunes.apple.com/jp/app/doubasu-shi-ke-biao/id888189690?mt=8')
       %p そのバス停の時刻表をチェックできるアプリです
 .col-xs-12
   %h2= icon('youtube-play', 'Movies')
   #movies
-    %h3= 'ボケてのハロCOO/オモロキCSOイセオサム氏が語る21世紀の働きかた！'
+    %h3= 'ボケてのハロCOO/オモロキCSOイセオサム氏が語る<br />21世紀の働きかた！'
     %iframe{ width: '560', height: '315', src: 'https://www.youtube.com/embed/xtScUYUz_Q4', frameborder: '0' }
+    %h3= 'マネーフォワード技術顧問の堀内康弘氏が語る<br />エンジニアとしてのマインドとキャリア'
+    %iframe{ width: '560', height: '315', src: 'https://www.youtube.com/embed/RPuqD9ci6cQ', frameborder: '0' }
 .col-xs-12
   %h2= icon('users', 'Members')
   #members

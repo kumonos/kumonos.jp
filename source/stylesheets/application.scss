@@ -7,6 +7,8 @@ $font-family-sans-serif: 'Lucida Grande', Verdana, 'Hiragino Kaku Gothic ProN', 
 $font-family-serif: Georgia, 'Hiragino Mincho ProN', serif;
 $font-family-monospace: Menlo, 'Courier New', 'Hiragino Kaku Gothic ProN', monospace;
 
+$space: 20px;
+
 // -------------------------------------------------------------------
 // Import Frameworks
 // -------------------------------------------------------------------
@@ -16,6 +18,10 @@ $font-family-monospace: Menlo, 'Courier New', 'Hiragino Kaku Gothic ProN', monos
 // -------------------------------------------------------------------
 // Core Styles
 // -------------------------------------------------------------------
+.container {
+  width: 800px;
+}
+
 body {
   > header, > footer {
     background: $brand-primary;
@@ -42,13 +48,32 @@ body {
     padding: $line-height-computed;
   }
 }
+
+h2 {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+  margin: 40px 0 $space 0;
+}
+
+h3 {
+  font-size: 22px;
+}
+
 #services {
   .service {
-    border: 1px solid #999999;
-    border-radius: 8px;
     height: 150px;
-    margin: -1px 0 0 -1px;
-    overflow: hidden;
+    margin-bottom: $space;
+
+    h3 {
+      margin-top: 0;
+    }
+
+    .image {
+      float: left;
+      border: 1px solid #ccc;
+      margin-right: $space;
+    }
   }
 }
 #members {
