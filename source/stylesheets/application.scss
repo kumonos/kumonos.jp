@@ -18,9 +18,6 @@ $space: 20px;
 // -------------------------------------------------------------------
 // Core Styles
 // -------------------------------------------------------------------
-.container {
-  width: 800px;
-}
 
 body {
   > header, > footer {
@@ -62,7 +59,7 @@ h3 {
 
 #services {
   .service {
-    height: 150px;
+    min-height: 150px;
     margin-bottom: $space;
 
     h3 {
