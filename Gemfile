@@ -19,3 +19,5 @@ gem 'font-awesome-sass', require: false
 
 # Javascript Runtime
 gem 'therubyracer'
+
+gem 'jquery-middleman', :require => false
