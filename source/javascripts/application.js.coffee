@@ -9,7 +9,8 @@ dispfeed = (result) ->
   if !result.error
     html = '<ul>'
     for entry in result.feed.entries
-      console.log entry
-      html += "<li><a href=\"#{entry.link}\" target=\"_blank\">#{entry.title}</a></li>"
+      date = new Date(entry.publishedDate)
+      dateStr = "#{date.getFullYear()}.#{(date.getMonth() + 1)}.#{date.getDate()}"
+      html += "<li>#{dateStr}<br /><a href=\"#{entry.link}\" target=\"_blank\">#{entry.title}</a></li>"
     html += '</ul>'
     $('#blog').append(html)
