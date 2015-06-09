@@ -6,6 +6,10 @@ title: Kumonos
   %h2= icon('star', 'Services')
   #services.row
     .service.col-xs-12.clearfix
+      %p.image= image_tag 'http://nabettu.github.io/mypedia/img/ogp.jpg', width: 200, height: 150
+      %h3= link_to('Mypedia', 'http://nabettu.github.io/mypedia')
+      %p Wikipedia風の自己紹介ページが作れます
+    .service.col-xs-12.clearfix
       %p.image= image_tag 'service/add_this_page_to_trello_form.png', width: 200, height: 150
       %h3= link_to('Add this page to Trello', 'https://chrome.google.com/webstore/detail/add-this-page-to-trello/fjfljghieliggacelkamhfiiejncmjmi/')
       %p 今開いているページをTrelloのタスクとして簡単に追加できるChrome Extension
@@ -95,12 +99,15 @@ title: Kumonos
       %ul.icons
         %li= link_to(image_tag('sns/facebook.png', width: 20, height: 20), 'https://www.facebook.com/ryotaro.akimoto')
     .member.clearfix
-      %p.image= image_tag 'https://graph.facebook.com/tatsuaki.watanabe.58/picture?return_ssl_resources=1&width=80&height=80', width: 80, height: 80
-      %p.intro 25歳。日本最大のITメーカーF社にてOSプロフェッショナルエンジニア。現在育児ニート。ものづくりの楽しさをすべての人に。
+      %p.image= image_tag 'https://graph.facebook.com/nabettu/picture?return_ssl_resources=1&width=80&height=80', width: 80, height: 80
+      %p.intro 25歳。日本最大のITメーカーF社を経て面白法人へ。ものづくりの楽しさをすべての人に。
+      %p.entry
+        = icon('rss-square')
+        = link_to('富士通株式会社を退職しました | つくログ', 'http://t-tu.com/blog/2015/06/09/retirement_of_fujitsu/')
       %ul.icons
-        %li= link_to(image_tag('sns/twitter.png', width: 20, height: 20), 'https://twitter.com/tatsuaki_w')
-        %li= link_to(image_tag('sns/facebook.png', width: 20, height: 20), 'https://www.facebook.com/tatsuaki.watanabe.58')
-        %li= link_to(image_tag('sns/feed.png', width: 20, height: 20), 'http://blog.t-tu.com/')
+        %li= link_to(image_tag('sns/twitter.png', width: 20, height: 20), 'https://twitter.com/nabettu')
+        %li= link_to(image_tag('sns/facebook.png', width: 20, height: 20), 'https://www.facebook.com/nabettu')
+        %li= link_to(image_tag('sns/feed.png', width: 20, height: 20), 'http://t-tu.com/blog/')
     .member.clearfix
       %p.image= image_tag 'http://www.gravatar.com/avatar/6a90bd29df59782ff4ba039aa7cc3f8a?s=160', width: 80, height: 80
       %p.intro 27歳。世界最大級の外資系IT企業I社、日本最大級の医療系IT企業M社を経て、現在はフリーのエンジニア。得意な言語はRubyと関西弁。
