@@ -1,23 +1,10 @@
 source 'https://rubygems.org'
 
 gem 'middleman', '~> 3.4.1'
-
-# Live-reloading plugin
-gem 'middleman-livereload'
-
-# For faster file watcher updates on Windows:
-gem 'wdm', '~> 0.1.0', :platforms => [:mswin, :mingw]
-
-# Windows does not come with time zone data
-gem 'tzinfo-data', platforms: [:mswin, :mingw]
+gem 'haml', '< 6'
 
 # Bootstrap
-gem 'bootstrap-sass', require: false
+gem 'bootstrap-sass', '3.3.6', require: false
 
 # Font-Awesome
-gem 'font-awesome-sass', require: false
-
-# Javascript Runtime
-gem 'therubyracer'
-
-gem 'jquery-middleman', :require => false
+gem 'font-awesome-sass', '4.5.0', require: false
